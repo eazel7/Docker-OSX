@@ -198,7 +198,8 @@ This file builds on top of the work done by Dhiru Kholia and many others on the 
 
 docker build -t docker-osx:latest \
 --build-arg VERSION=10.14.6 \
---build-arg SIZE=200G
+--build-arg SIZE=200G \
+.
 
 docker run --privileged -v /tmp/.X11-unix:/tmp/.X11-unix docker-osx:latest
 
